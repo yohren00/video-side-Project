@@ -2,7 +2,7 @@
 const path = require('path');
 module.exports = {
     //這個webpack打包的對象，這裡面加上剛剛建立的index.js
-    entry: ['./src/index.js', './src/app.jsx'],
+    entry: ['./src/index.js'],
     output: {
         //這裡是打包後的檔案名稱
         filename: 'bundle.js',
@@ -13,10 +13,8 @@ module.exports = {
     module: {
         //rules的值是一個陣列可以存放多個loader物件
         rules: [
-            //編譯ES6
-            { test: /.js$/, exclude: /node_modules/, use: { loader: 'babel-loader', options: { presets: ['@babel/preset-env'] } } },
             //編譯JSX的loader，將@babel/preset-env加進preset中
-            { test: /.jsx$/, exclude: /node_modules/, use: { loader: 'babel-loader', options: { presets: ['@babel/preset-react', '@babel/preset-env'] } } }
+            { test: /\.(js|jsx)$/, exclude: /node_modules/, use: { loader: 'babel-loader', options: { presets: ['@babel/preset-react', '@babel/preset-env'] } } }
         ]
     },
     //增加一個給devserver的設定

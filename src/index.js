@@ -1,4 +1,9 @@
-let strA = 'Hello, '
-strA += 'GQSM!'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from "./App";
 
-console.log("122");
+
+ReactDOM.render(
+    <App />,
+    document.getElementById('root')
+);
