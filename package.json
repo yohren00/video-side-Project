@@ -1,0 +1,30 @@
+{
+    "name": "video-side-project",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack --p"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yohren00/video-side-Project.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/yohren00/video-side-Project/issues"
+    },
+    "homepage": "https://github.com/yohren00/video-side-Project#readme",
+    "dependencies": {
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.11.6",
+        "babel-loader": "^8.1.0",
+        "webpack": "^4.44.2",
+        "webpack-cli": "^3.3.12"
+    }
+}
