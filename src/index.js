@@ -1,1 +1,4 @@
-console.log("123");
+let strA = 'Hello, '
+strA += 'GQSM!'
+
+console.log("122");
