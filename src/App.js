@@ -1,9 +1,11 @@
 import React from "react";
-
+import Header from "./components/header/header.jsx";
+import Context from "./components/context/context.jsx";
 
 function App() {
     return <>
-        <h1>123</h1>
+        <Header />
+        <Context />
     </>
 }
 
