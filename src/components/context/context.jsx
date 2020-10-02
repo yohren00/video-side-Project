@@ -7,6 +7,6 @@ function Context() {
 
         </div>
     </>
-}
+};
 
 export default Context;
