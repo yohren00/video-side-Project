@@ -12,7 +12,6 @@ function Header() {
             <div className="searchbar">
                 <input className="search" type="text" placeholder="搜尋" />
                 <div className="search-button" ><img src={searchImage} /></div>
-                {/* <img className="search-button" src={searchImage} /> */}
             </div>
         </div>
     </>

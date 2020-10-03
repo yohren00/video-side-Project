@@ -1,9 +1,11 @@
 //引用path模組
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const Dotenv = require('dotenv-webpack');
+
 module.exports = {
     //這個webpack打包的對象，這裡面加上剛剛建立的index.js
-    entry: ['./src/index.js'],
+    entry: ['./src/index.js', '@babel/polyfill'],
     output: {
         //這裡是打包後的檔案名稱
         filename: 'bundle.js',
@@ -66,6 +68,7 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: './index.css',
         }),
+        new Dotenv(),
     ],
     //增加一個給devserver的設定
     devServer: {

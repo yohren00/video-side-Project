@@ -1,21 +1,14 @@
 import React from "react";
 import "./context.scss";
+import VideoList from "../video-list/video-list.jsx";
+
+
+
 
 function Context() {
     return <>
         <div className="context-main">
-            <div className="views-videos"></div>
-            <div className="views-videos"></div>
-            <div className="views-videos"></div>
-            <div className="views-videos"></div>
-            <div className="views-videos"></div>
-            <div className="views-videos"></div>
-            <div className="views-videos"></div>
-            <div className="views-videos"></div>
-            <div className="views-videos"></div>
-            <div className="views-videos"></div>
-            <div className="views-videos"></div>
-            <div className="views-videos"></div>
+            <VideoList />
         </div>
     </>
 };

@@ -1,6 +1,6 @@
 //共用樣式
 $pad: 768px;
-$pc: 1920px;
+$pc: 1280px;
 
 %header-link {
     padding: 5px 5px 0 5px;
@@ -66,7 +66,7 @@ $pc: 1920px;
             border-color: #939699;
             border-radius: 2px;
             cursor: pointer;
-
+            text-align: center;
             @media (min-width: $pad) {
                 flex-basis: 8%;
                 max-width: 8%;
@@ -75,16 +75,11 @@ $pc: 1920px;
             &:hover {
                 background-color: #d3d3d3;
             }
-            img {
-                padding: 5px 0 0 4px;
-                flex-basis: 78%;
-                max-width: 78%;
-                width: auto;
-                height: auto;
+            > img {
+                width: 20px;
+                margin-top: 7px;
                 @media (min-width: $pc) {
-                    padding: 5px 0 0 25px;
-                    flex-basis: 30%;
-                    max-width: 30%;
+                    width: 20px;
                 }
             }
         }

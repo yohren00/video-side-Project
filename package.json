@@ -19,6 +19,9 @@
     },
     "homepage": "https://github.com/yohren00/video-side-Project#readme",
     "dependencies": {
+        "@babel/polyfill": "^7.11.5",
+        "axios": "^0.20.0",
+        "dotenv-webpack": "^3.0.0",
         "node-sass": "^4.14.1",
         "react": "^16.13.1",
         "react-dom": "^16.13.1"
