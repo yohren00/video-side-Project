@@ -1,0 +1,29 @@
+//共用樣式
+$pad: 768px;
+$pc: 1280px;
+.video-views {
+    text-align: center;
+    .video-list {
+        display: inline-block;
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        cursor: pointer;
+        @media (min-width: $pc) {
+            flex-basis: 23%;
+            max-width: 23%;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+        p {
+            display: flex;
+            text-align: left;
+            max-width: 100%;
+            margin-top: 0;
+        }
+    }
+}

@@ -4,30 +4,6 @@ $pc: 1280px;
 
 .context-main {
     background-color: #eeeeee;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
-
-    .views-videos {
-        background-color: cadetblue;
-        flex-basis: 100%;
-        max-width: 100%;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 40px;
-        height: 300px;
-        @media (min-width: $pad) {
-            margin-left: 100px;
-            margin-right: 100px;
-        }
-        @media (min-width: $pc) {
-            margin-left: 18px;
-            margin-right: 18px;
-            flex-basis: 23%;
-            max-width: 23%;
-        }
-    }
 }
