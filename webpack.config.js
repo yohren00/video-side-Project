@@ -78,4 +78,14 @@ module.exports = {
         // hotOnly: true
         historyApiFallback: true,
     },
+    //import 使用絕對路徑
+    resolve: {
+        modules: [
+            'node_modules',
+            path.resolve(__dirname + '/src')
+        ],
+        alias: {
+            src: path.resolve(__dirname + '/src')
+        }
+    },
 };

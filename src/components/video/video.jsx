@@ -4,7 +4,7 @@ import ReactPlayer from "react-player";
 import "./video.scss";
 
 function Video() {
-    let videoID = location.pathname.replace("/video/", "");
+    let videoID = location.pathname.replace("/", "");
     console.log(videoID)
 
     return <>

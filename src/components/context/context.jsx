@@ -1,13 +1,11 @@
 import React from "react";
+
+import VideoList from "components/video-list/video-list.jsx";
+
 import "./context.scss";
-import VideoList from "../video-list/video-list.jsx";
-
-
 
 
 function Context() {
-
-
     return <>
         <div className="context-main">
             <VideoList />

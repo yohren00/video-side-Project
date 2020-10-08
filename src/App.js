@@ -16,7 +16,7 @@ function App() {
                 <Switch>
                     <Route exact path="/" component={HomePage} />
                     <Route exact path="/favorite" component={FavoritePage} />
-                    <Route exact path="/video/:id" component={PlayVideoPage} />
+                    <Route exact path="/:id" component={PlayVideoPage} />
                 </Switch>
             </BrowserRouter>
         </DataProvider>

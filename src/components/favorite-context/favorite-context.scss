@@ -16,23 +16,23 @@ $pc: 1280px;
             margin-left: 10px;
         }
 
-        .add {
-            background-color: black;
-            color: white;
-            opacity: 0;
+        // .add {
+        //     background-color: black;
+        //     color: white;
+        //     opacity: 0;
 
-            &:hover {
-                opacity: 1;
-            }
+        //     &:hover {
+        //         opacity: 1;
+        //     }
 
-            @media (min-width: $pad) {
-            }
+        //     @media (min-width: $pad) {
+        //     }
 
-            @media (min-width: $pc) {
-                top: 200px;
-                left: 340px;
-            }
-        }
+        //     @media (min-width: $pc) {
+        //         top: 200px;
+        //         left: 340px;
+        //     }
+        // }
 
         img {
             max-width: 100%;

@@ -33,8 +33,8 @@ $pc: 1280px;
 
         @media (min-width: $pc) {
             justify-content: start;
-            flex-basis: 20%;
-            max-width: 20%;
+            flex-basis: 23%;
+            max-width: 23%;
         }
         .home {
             @extend %header-link;
