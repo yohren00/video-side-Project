@@ -1,4 +1,14 @@
-.header-main{display:flex;width:100%;height:30px;padding-bottom:5px;justify-content:center}.header-main .home{padding:0 10px}.header-main .favorite{padding:0 10px}.header-main .Play{padding:0 10px}.header-main .searchbar{justify-content:center;flex-basis:50%;max-width:50%;display:flex}.header-main .searchbar .search{flex-basis:40%;max-width:40%}.header-main .searchbar .search-button{background:url(./img/search-svgrepo-com.svg)}
+.header-main .menu .home,.header-main .menu .favorite{padding:5px 5px 0 5px;text-align:center;line-height:22px}@media (min-width: 1280px){.header-main .menu .home,.header-main .menu .favorite{flex-basis:20%;max-width:20%}}.header-main .menu .home a,.header-main .menu .favorite a{color:black;text-decoration:none}.header-main{display:flex;width:100%;height:35px;padding-bottom:5px}@media (min-width: 1280px){.header-main{justify-content:center}}.header-main .menu{flex-basis:49%;max-width:49%;display:flex;justify-content:center}@media (min-width: 1280px){.header-main .menu{justify-content:start;flex-basis:23%;max-width:23%}}.header-main .searchbar{justify-content:end;flex-basis:50%;max-width:50%;display:flex}@media (min-width: 1280px){.header-main .searchbar{justify-content:start}}.header-main .searchbar .search{margin-left:10px;flex-basis:70%;max-width:70%}.header-main .searchbar .search-button{flex-basis:20%;max-width:20%;border-style:solid;border-width:1px;border-color:#939699;border-radius:2px;cursor:pointer;text-align:center}@media (min-width: 768px){.header-main .searchbar .search-button{flex-basis:8%;max-width:8%}}.header-main .searchbar .search-button:hover{background-color:#d3d3d3}.header-main .searchbar .search-button>img{width:20px;margin-top:7px}@media (min-width: 1280px){.header-main .searchbar .search-button>img{width:20px}}
 
-.context-main{background-color:#f5f5f5;width:100%;height:1280px}
+.video-views{text-align:center}.video-views .video-list{display:inline-block;flex-basis:100%;max-width:100%;margin-bottom:20px;cursor:pointer}@media (min-width: 1280px){.video-views .video-list{flex-basis:23%;max-width:23%;margin-right:10px;margin-left:10px}}.video-views .video-list .add{background-color:black;color:white;opacity:0}.video-views .video-list .add:hover{opacity:1}@media (min-width: 1280px){.video-views .video-list .add{top:200px;left:340px}}.video-views .video-list img{max-width:100%}.video-views .video-list p{display:flex;text-align:left;max-width:100%;margin-top:0}
+
+.context-main{background-color:#eeeeee;padding-top:20px;padding-bottom:20px}
+
+.video-views{text-align:center}.video-views .video-list{display:inline-block;flex-basis:100%;max-width:100%;margin-bottom:20px;cursor:pointer}@media (min-width: 1280px){.video-views .video-list{flex-basis:23%;max-width:23%;margin-right:10px;margin-left:10px}}.video-views .video-list img{max-width:100%}.video-views .video-list p{display:flex;text-align:left;max-width:100%;margin-top:0}
+
+.context-main{background-color:#eeeeee;padding-top:20px;padding-bottom:20px}
+
+.context{background-color:#eeeeee}.context .video{display:flex;justify-content:center;padding-top:20px;padding-bottom:20px;text-decoration:none}
+
+body{font-size:18px}a{text-decoration:none;color:black}
 
