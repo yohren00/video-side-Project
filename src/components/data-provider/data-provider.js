@@ -45,10 +45,38 @@ export function DataProvider(props) {
         }
     }
 
+    //刪除收藏
+    const removeVideo = (id) => {
+        if (window.confirm("確定要刪去影片?")) {
+            favorite.forEach((item, index) => {
+                if (item.contentDetails.videoId === id) {
+                    favorite.splice(index, 1)
+                }
+            })
+            setFavorite([...favorite])
+        }
+    }
+
+    // //取得localStorage中的資料
+    useEffect(() => {
+        const dataVideo = JSON.parse(localStorage.getItem("dataVideo"));
+        // dataVideo ? setFavorite(dataVideo) : console.log("localStorage getItem error")
+        if (dataVideo) setFavorite(dataVideo)
+    }, [])
+
+    //資料存在localStorage中
+    useEffect(() => {
+        localStorage.setItem("dataVideo", JSON.stringify(favorite));
+    }, [favorite])
+
+
+
+
     const value = {
         video: [video, setVideo],
         favorite: [favorite, setFavorite],
-        addFavorite: addFavorite
+        addFavorite: addFavorite,
+        removeVideo: removeVideo
     }
 
     return <>

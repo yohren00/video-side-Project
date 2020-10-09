@@ -3,18 +3,16 @@ import { Link } from 'react-router-dom';
 
 import { DataContext } from "../data-provider/data-provider.js";
 
-import "./video-list.scss";
+import "./favorite-list.scss";
 
-const YOUTUBE_PLAYLIST_ITEMS_API = "https://www.googleapis.com/youtube/v3/playlistItems";
-const YOUTUBE_VIDEO_API = "https://www.googleapis.com/youtube/v3/videos";
+function FavoriteList() {
+    const [favorite] = useContext(DataContext).favorite;
+    const removeVideo = useContext(DataContext).removeVideo;
 
-function Videolist() {
-    const [video] = useContext(DataContext).video;
-    const addFavorite = useContext(DataContext).addFavorite;
     return <>
         <div className="video-views">
             {
-                video ? video.map(item => {
+                favorite ? favorite.map(item => {
                     const { id, snippet = {}, contentDetails = {} } = item;
                     const { videoId, videoPublishedAt } = contentDetails;
                     const { title, channelTitle, thumbnails = {} } = snippet;
@@ -22,7 +20,7 @@ function Videolist() {
                     let time = videoPublishedAt.replace("T", " ").replace("Z", "");
                     return <>
                         <div className="video-list" key={videoId} id={videoId} >
-                            <div className="add" onClick={() => addFavorite(videoId)}>+</div>
+                            <div className="add" onClick={() => removeVideo(videoId)}>-</div>
                             <Link to={`/${videoId}`}>
                                 <img src={maxres.url} alt={title} />
                                 <p>
@@ -40,4 +38,4 @@ function Videolist() {
     </>
 };
 
-export default Videolist;
+export default FavoriteList;
