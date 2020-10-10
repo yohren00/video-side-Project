@@ -1,17 +1,18 @@
-import React, { useContext } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from 'react-router-dom';
 
 import { DataContext } from "../data-provider/data-provider.js";
 
-import "./video-list.scss";
+import "./search-list.scss";
 
-function Videolist() {
-    const [video] = useContext(DataContext).video;
-    const addFavorite = useContext(DataContext).addFavorite;
+function SearchList() {
+
+    const [searchVideo] = useContext(DataContext).searchVideo;
+
     return <>
         <div className="video-views">
             {
-                video ? video.map(item => {
+                searchVideo ? searchVideo.map(item => {
                     const { id, snippet = {}, contentDetails = {} } = item;
                     const { videoId, videoPublishedAt } = contentDetails;
                     const { title, channelTitle, thumbnails = {} } = snippet;
@@ -37,4 +38,4 @@ function Videolist() {
     </>
 };
 
-export default Videolist;
+export default SearchList;

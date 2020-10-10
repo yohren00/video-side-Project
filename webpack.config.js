@@ -88,4 +88,10 @@ module.exports = {
             src: path.resolve(__dirname + '/src')
         }
     },
+    //讓打包上傳大小限制調整
+    performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+    },
 };

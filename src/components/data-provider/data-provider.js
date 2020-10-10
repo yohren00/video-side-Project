@@ -8,6 +8,8 @@ export const DataContext = createContext();
 export function DataProvider(props) {
     const [video, setVideo] = useState([]);
     const [favorite, setFavorite] = useState([]);
+    const [searchVideo, setSearchVideo] = useState([]);
+
     //取得youtube aip 資料
     useEffect(() => {
         async function axiosData() {
@@ -69,14 +71,22 @@ export function DataProvider(props) {
         localStorage.setItem("dataVideo", JSON.stringify(favorite));
     }, [favorite])
 
-
-
+    //收尋
+    const filterVideo = (value) => {
+        let filterValue = video.filter((item) => {
+            const filterValue = item.snippet.title.match(value);
+            return filterValue;
+        });
+        setSearchVideo(filterValue);
+    }
 
     const value = {
         video: [video, setVideo],
         favorite: [favorite, setFavorite],
+        searchVideo: [searchVideo, setSearchVideo],
         addFavorite: addFavorite,
-        removeVideo: removeVideo
+        removeVideo: removeVideo,
+        filterVideo: filterVideo
     }
 
     return <>
