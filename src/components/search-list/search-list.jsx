@@ -8,7 +8,6 @@ import "./search-list.scss";
 function SearchList() {
 
     const [searchVideo] = useContext(DataContext).searchVideo;
-
     return <>
         <div className="video-views">
             {
